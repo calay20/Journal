@@ -1,0 +1,231 @@
+  .contain{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 40px;
+    text-align: justify;
+  }
+  .Datavideo iframe{
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+  }
+  .table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  .card video{
+    height: 400px;
+  }
+  /* Emerge */
+  .evolution{
+    margin: 20px;
+    text-align: justify;
+    font-size: 18px;
+  }
+  
+  /* Picsa Rev */
+  .picrev1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Data Sci */
+  .datajustify {
+    text-align: justify;
+    margin: 20px;
+  }
+  /* AI Def */
+  .accord{
+    text-align: justify;
+    margin: 20px;
+  }
+  /* Ai Types */
+  .AITypes{
+    margin: 20px;
+  }
+  /* sidevid in AI Types */
+  .videoside {
+     float: left;
+     text-align: justify;
+  }
+  .videoside iframe{
+    float: right;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin: 20px;
+ }
+ .video {
+  float: left;
+
+ }
+ .video iframe{
+  float:
+   right;
+ }
+/* AIapp */
+  .AIapp{
+    margin: 20px;
+    text-align: justify;
+}
+/* IOT */
+.IOT{
+  margin: 20px;
+  text-align: justify;
+}
+/* Chall IOT */
+.table{
+    text-align: justify;
+}
+/* Archi IOt */
+.Architect ul li{
+  text-align: justify;
+  margin:20px;
+  font-size: 18px;
+  
+}
+.Architect  li b{
+  text-align: justify;
+  font-size: 18px;
+  
+}
+.Architect h2{
+  padding-left: 15px;
+  font-size: 18px;
+  
+}
+
+/* AR Definition */
+.tab{
+   margin-left: 20px;
+   margin-right: 20px;
+   text-align: justify;
+}
+/* AR, VR, MR pic */
+.table1 img{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 400px;
+  height: 300px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.table1 td p{
+  text-align: justify;
+  margin: 20px;
+}
+
+/* nano */
+.accordion-body{
+  margin: 10px;
+  text-align: justify;
+}
+.accordion-body  img{
+  padding-left: 30px;
+}
+/* bio */
+.panel ul li{
+  font-size: 16px;
+  text-align: justify;
+ }
+ .panel p{
+  font-size: 16px;
+  text-align: justify;
+ }
+ 
+ /* Buttons */
+.btnpre{
+float: left;
+margin-right: 35px;
+margin-left: 35px;
+margin-top: 40px;
+margin-bottom: 20px;
+}
+.btnnext{
+  float: right;
+  margin-right: 35px;
+  margin-left: 35px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.btnpre button
+{
+  background-color: rgb(202, 32, 32);
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10x;
+
+}
+.btnnext button
+{
+  background-color: rgb(202, 32, 32);
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10x;
+  
+}
+/* btnhome */
+.btnhome button
+{
+  margin-top: 15px;
+  margin-left: 20px;
+  background-color: yellow;
+ 
+}
+  /* vision */
+.vid ul {
+  float: left;
+  text-align: justify;
+  }
+  .vid iframe{
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding-bottom: 25px;
+ }
+ /*about*/
+ 
+ .about{
+  background-color: lightpink;
+ }
+ .title p{
+  text-align: justify;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-size: 20px;
+ }
+ .bottom{
+  margin-top: 270px;
+  text-align: center;
+  background-color: aquamarine;
+  
+ }
+ .emerge img{
+  border:3px solid red;
+ }
+ .datasci iframe{
+  border:5px solid rgb(17, 0, 255);
+ }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

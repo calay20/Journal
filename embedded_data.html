@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+</style>
+</head>
+<body>
+  <br>
+  <div class="btnhome"> 
+    <a href= "index.html"> 
+    <button style='font-size:20px'><i class='fa fa-home'></i> Home
+    </button>
+    </a> 
+</div>
+<br>
+<h2 style="text-align: center;">EMBEDDED SYSTEM</h2>
+<button class="accordion">What does it mean?</button>
+<div class="panel">
+  <p>
+   <b> Embedded System</b> is a controller with a dedicated function within a larger mechanical or electrical system, often
+with real-time computing constraints. It is embedded as part of a complete device often including
+hardware and mechanical parts. Embedded systems control many devices in common use
+today. Ninety-eight percent of all microprocessors manufactured are used in embedded systems.
+  </p>
+  <p>
+    <div class="Datavideo">
+      <p> 
+        <iframe width="400" height="200" src="https://www.youtube.com/embed/Qpc1M-BntaM" title="What Is an Embedded System?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </p>
+      </div>
+  </p>
+</div>
+
+<button class="accordion">History of Embedded System</button>
+<div class="panel">
+
+    <div class="Datavideo">
+      <p> 
+        <iframe width="400" height="200" src="https://www.youtube.com/embed/Xyn0Oh5jlTc" title="History of Embedded Systems [year-4]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </p>
+      </div>
+ 
+</div>
+
+<button class="accordion">Advantages & Disadvantages of Embedded System</button>
+<div class="panel">
+  <p><b> Advantages of Embedded </b>
+    <ul> 
+        <li>  Easily Customizable. </li>
+        <li>  Low power consumption </li> 
+        <li>  Low cost  </li>
+        <li>  Enhanced performance </li>
+      </ul>
+  </p>
+  <p><b>Disadvantages of Embedded</b>
+    <ul> 
+        <li>  High development effort </li>
+        <li>  Larger time to market</li> 
+      </ul>
+  </p>
+  </p>
+</div>
+
+<button class="accordion">Applications of Embedded System</button>
+<div class="panel">
+  <div class="Datavideo">
+    <p> 
+      <iframe width="400" height="200" src="https://www.youtube.com/embed/qPdDorEs-LQ" title="What are Embedded Systems ? Their Applications ?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </p>
+    </div>
+
+</div>
+
+<button class="accordion">Basic Structure of an Embedded System</button>
+<div class="panel">
+    <p>The following illustration shows the basic structure of an embedded system:</p>
+    <img  class="emebed" src="embed_pics.jpg" alt="One" width="400" height="150">
+    <ul> 
+    <li> <b>Sensor </b>- It measures the physical quantity and converts it to an electrical signal which can be read by an observer or by any electronic instrument like an A2D converter. A sensor stores the measured quantity to the memory.</li>
+    <li> <b>A-D Converter</b> - An analog-to-digital converter converts the analog signal sent by the sensor into a digital signal.</li> 
+    <li> <b>Processor & ASICs </b> - Processors process the data to measure the output and store it to the memory.</li>
+    <li> <b>D-A Converter </b>- A digital-to-analog converter converts the digital data fed by the processor to analog data. </li>
+    <li> <b>Actuator</b> - An actuator compares the output given by the D-A Converter to the actual (expected) output stored in it and stores the approved output.</li>
+
+</ul>
+</div>
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+<div class="btnpre"> 
+  <a href= "VISION.html"> 
+  <button style='font-size:18px'><i class='fa fa-angle-double-left'></i> Previous
+  </button>
+  </a> 
+</div> 
+<div class="btnnext"> 
+  <a href= "cyber_data.html"> 
+  <button style='font-size:18px'> Next  <i class='fa fa-angle-double-right'></i>
+  </button>
+  </a> 
+</div> 
+
+</body>
+</html>

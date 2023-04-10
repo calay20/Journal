@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+</style>
+</head>
+<body>
+  <br>
+  <div class="btnhome"> 
+    <a href= "index.html"> 
+    <button style='font-size:20px'><i class='fa fa-home'></i> Home
+    </button>
+    </a> 
+</div>
+
+<h2 style="text-align: center;"> CYBER SECURITY</h2>
+<br>
+<button class="accordion">What is Cybersecurity?</button>
+<div class="panel">
+  <p> <b>Cybersecurity</b> refers to the body of technologies, processes, and practices designed to protect networks, devices, programs, and data from attack, damage, or unauthorized access. Cyber security may also be referred to as information technology security.</p>
+
+    <div class="Datavideo">
+      <p> 
+        <iframe width="400" height="200" src="https://www.youtube.com/embed/inWWhr5tnEA" title="Cyber Security In 7 Minutes | What Is Cyber Security: How It Works? | Cyber Security | Simplilearn" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </p>
+
+</div>
+</div>
+
+<button class="accordion"> Types of Cyber Threats</button>
+<div class="panel">
+  <p>The most common types of cyber threats include:</p>
+    <ul> 
+    <li>  Hacking</li>
+    <li> Social Engineering</li>
+    <li> Physical Security Attacks</li> 
+    <li> Viruses and Malware </li>
+    <li> Ransomware </li>
+  </ul>
+</div>
+
+<button class="accordion">Top 10 Cyber Attacks in History</button>
+<div class="panel">
+  <div class="Datavideo">
+    <p> 
+      <iframe width="400" height="200" src="https://www.youtube.com/embed/fUeJtM1bgGo" title="Top 10 Cyber Attacks In History | Biggest Cyber Attacks Of All Time | Cyber Security | Simplilearn" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </p>
+
+</div>
+</div>
+
+<button class="accordion"> Challenges of Cyber Security</button>
+<div class="panel">
+  <p>
+    For effective cyber security, an organization needs to coordinate its efforts throughout its entire information system. Elements of cyber encompass all of the following:
+  </p>
+  <ul>
+   <li> <b>  Network security:</b> The process of protecting the network from unwanted users, attacks and intrusions.</li><br>
+   <li> <b> Application security:</b> Apps require constant updates and testing to ensure these programs are secure from attacks.</li><br>
+   <li> <b>  Endpoint security:</b> Remote access is a necessary part of business, but can also be a weak point for data. Endpoint security is the process of protecting remote access to a company’s network.</li><br>
+   <li> <b> Data Security: </b> Inside of networks and applications is data. Protecting company and customer information is a separate layer of security.</li><br>
+   <li> <b>  Identity management:</b> Essentially, this is a process of understanding the access every individual has in an organization.</li><br>
+   <li> <b>  Cloud security:</b> Many files are in digital environments or “the <br>cloud”. Protecting data in a 100% online environment presents large amount of challenges.</li><br>
+    <li> <b> Security for mobile devices:</b> Cell phones and tablets involve virtually every type of security challenge in and of themselves.</li><br>
+  </ul>
+</div>
+
+<button class="accordion">Cyber Security| SHORT FILM</button>
+<div class="panel">
+  <div class="Datavideo">
+    <p> 
+      <iframe width="400" height="200" src="https://www.youtube.com/embed/GX_XsdNv1PY" title="Cyber Security | Short Film" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </p>
+
+</div>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+</div>
+<br> <br>
+<div class="btnpre"> 
+  <a href= "embedded_data.html"> 
+  <button style='font-size:18px'><i class='fa fa-angle-double-left'></i> Previous
+  </button>
+  </a> 
+</div> 
+<div class="btnnext"> 
+  <a href= "manufact_data.html"> 
+  <button style='font-size:18px'> Next  <i class='fa fa-angle-double-right'></i>
+  </button>
+  </a> 
+</div> 
+
+</body>
+</html>

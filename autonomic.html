@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #a5e4ff;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+</style>
+</head>
+<body>
+  
+  <div class="btnhome"> 
+    <a href= "index.html"> 
+    <button style='font-size:20px'><i class='fa fa-home'></i> Home
+    </button>
+    </a> 
+</div>
+<br>
+<h2 style="text-align: center;"> AUTONOMIC COMPUTING</h2>
+<br>
+<button class="accordion">What is meant by the term autonomic computing?</button>
+<div class="panel">
+  <p> It is a computer’s ability to manage itself automatically through adaptive technologies that further computing capabilities and cut down on the time required by computer professionals to resolve system difficulties and other maintenance such as software updates.</p>
+  <img  class="autonomic" src="Autom.jpg" alt="One" width="400" height="200">
+</div>
+
+<button class="accordion">What are the 4 areas of autonomic computing?</button>
+<div class="panel">
+  <p>There are four areas or characteristics of Autonomic Computing as defined by IBM. These are as follows:</p>
+    <ul> 
+  <li> <b> Self-Configuration. </b>
+    The system must be able to configure itself automatically according to the changes in its environment. It should be able to add new components, configure its components, get rid of old or faulty components, and reconfigure them by own its own, without needing human interference or intervention (or with very little human assistance).</li><br>
+   <li> <b>Self-Healing. </b>
+    IBM mentions that an autonomic system must have property by which it must be able to repair itself from errors and also route the functions away from trouble whenever they are encountered. It should have the ability to identify faulty components, diagnose them using a corrective mechanism, and heal itself without damaging or harming any other components of the system.</li> <br>
+    <li> <b>Self-Optimization. </b>
+    According to IBM an autonomic system must be able to perform in an optimized manner and ensure that it follows an efficient algorithm for all computing operations. This capability is also known as the self adjusting or self tuning property of an autonomous system. Resource utilization and workload management both happen to be aspects of these characteristics.</li><br>
+    <li> <b>Self-Protection. </b>
+    IBM states that an autonomic system must be able to perform detection, identification, and protection from security and system attacks so that systems’ security and integrity remain intact. Autonomic systems have the ability to detect hostile behaviours and then take several types of corrective actions and measures to protect themselves from any sort of attack.</li><br>
+</ul>
+</div>
+
+<button class="accordion">What's the autonomic computing architecture?</button>
+<div class="panel">
+  <p>The AC architecture comprises attributes that allow self-management, according to various vendors by involving control loops.
+    <ul> 
+        <li> <b> Control loops:</b> A resource provider provides control loops. It is embedded in the runtime environment. It is configured using a manageability interface that is provided for every resource e.g. hard drive.</li><br>
+        <li> <b>Managed Elements: </b>The managed element is a component of the controlled system. It can be hardware as well as a software resource. Sensors and effectors are used to control the managed element.</li> <br>
+        <li> <b>Sensors: </b> This contains information about the state and any changes in the state of elements of the autonomic system.</li><br>
+        <li> <b> Effectors: </b> These are commands or application programming interfaces (API) that are used to change the states of an element.</li><br>
+        <li> <b> Autonomic Manager: </b> This is used to make sure that the control loops are implemented. This divides the loop into 4 parts for its functioning. These parts are monitor, analyze, plan, and execute.</li><br>
+      </ul>
+  </p>
+</div>
+
+<button class="accordion">What are the benefits of autonomic computing?</button>
+<div class="panel">
+  <p> 
+The key advantage of autonomic computing is decreased Total Cost of Ownership. Breakdowns would be less common with significantly lowering maintenance costs. A very few staff members will be required to operate the networks. The benefit of autonomic computing will be reduced in maintenance cost, deployment, time, and increased stability of IT systems through automation.
+
+Another advantage of this technology is that it provides data consolidation to optimize system capacity and minimizes expense and human activity to maintain massive server farms.
+  </p>
+</div>
+
+<button class="accordion"> How does autonomic computing benefit cloud computing?</button>
+<div class="panel">
+  <p>
+Autonomic computing is widely used in cloud computing environments because it brings self-monitoring, self-repairing, and self-optimizing capabilities that improve the whole performance of the cloud system. Even though autonomic computing can be used in pretty much any environment, it has shown the ability to bring unmatched levels of performance improvement in the cloud environments because of it’s dynamism, scalability, and complex behavior.
+  </p>
+</div>
+
+<button class="accordion"> What is an example of autonomic computing?</button>
+<div class="panel">
+  <p>
+The concept of autonomic computing is based on autonomic systems found in nature. Examples of such systems include the autonomic nervous system of humans and the self-regulation of colonial insects such as bees and ants. In an autonomic system, the behaviors of individual components lead to higher-order self-maintenance properties of the group as a whole.
+  </p>
+</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</div>
+
+<div class="btnpre"> 
+  <a href= "cloud.html"> 
+  <button style='font-size:18px'><i class='fa fa-angle-double-left'></i> Previous
+  </button>
+  </a> 
+</div> 
+<div class="btnnext"> 
+  <a href= "VISION.html"> 
+  <button style='font-size:18px'> Next  <i class='fa fa-angle-double-right'></i>
+  </button>
+  </a> 
+</div> 
+
+
+</body>
+</html>

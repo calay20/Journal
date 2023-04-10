@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #a5e4ff;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+</style>
+</head>
+<body>
+  
+  <div class="btnhome"> 
+    <a href= "index.html"> 
+    <button style='font-size:20px'><i class='fa fa-home'></i> Home
+    </button>
+    </a> 
+</div>
+<br>
+<h2 style="text-align: center;"> BIOTECHNOLOGY </h2>
+<br>
+<button class="accordion">What is biotechnology?</button>
+<div class="panel">
+  <p> <b> Biotechnology </b>is the branch of science that uses living cells to develop products that have multiple applications. Biotechnology research has rapidly evolved with advancements in genetic engineering. Recently, modern biotechnology has been sub-divided into five branches, namely, environmental, human, industrial, plant, and animal, based on the type of application. Scientists have described biotechnology as a means to fight hunger and disease, reduce environmental contaminants, and minimize the ecological footprint.</p>
+  <img  class="autonomic" src="bio pic.jpg" alt="One" width="300" height="200">
+
+  <img  class="autonomic" src="bio pic2.png" alt="One" width="300" height="200">
+  <img  class="autonomic" src="bio pic 3.jpg" alt="One" width="300" height="200">
+ <br> <br>
+</div>
+
+<button class="accordion">What is the importance of biotechnology?</button>
+<div class="panel">
+  <p>
+    <b> Biotechnology </b>is particularly important in the field of medicine, where it facilitates the production of therapeutic proteins and other drugs. Synthetic insulin and synthetic growth hormone and diagnostic tests to detect various diseases are just some examples of how biotechnology is impacting medicine. Biotechnology has also proved helpful in refining industrial processes, in environmental cleanup, and in agricultural production.
+  </p>
+</div>
+
+<button class="accordion"> Types of Biotechnology</button>
+<div class="panel">
+  <p>The different types of biotechnology are:
+    <ul> 
+        <li> <b> Medicinal Biotechnology:</b> In medicine, biotechnology has been extensively applied in the development of many drugs, gene therapy, gene testing, immunology, and many other novel treatments. Genetic testing is used in forensics for identifying individuals, sex determination, newborn screening, etc.</li><br>
+        <li> <b> Agricultural Biotechnology: </b> In agricultural biotechnology, scientists splice the superior gene from one plant and incorporate it into another which lacks such characteristics but is economically important. GMO crops have been highly successful in Africa and the Middle East, owing to their unfavorable climate for crop production. This technology has also enabled farmers to obtain maximum yield from their fields with minimal administration of chemical fertilizers.</li> <br>
+        <li> <b>Environmental Biotechnology: </b> It associated with the purification of wastewater, the management of solid wastes, and the cleaning up of sediment clean-up. In mycoremediation, fungi synthesize enzymes and acids which help to break down harmful contaminants. Therefore, biotechnology not only plays a dominant role in environmental cleanup and waste management but also improves methane recovery from landfills and other waste. It is also used in the production of organic fertilizers to sustain agriculture.</li> <br>
+        <li> <b> Food Biotechnology: </b> Biotechnology is also involved with the production and modification of enzymes. These enzymes are used in the food and drink industry. The modified enzymes are used in making bread, syrups, cheese, meat tenderizing, etc. Biotechnology is involved with the infusion of nutrients into food products. For example, researchers have developed Golden Rice which contains beta-carotene.</li><br>
+        <li> <b> Biotechnology in Space:</b> Biotechnology has made tremendous contributions to space travel. It has enabled improved air and water quality.
+
+          Further, methanogenic bacteria can break down organic matter, e.g., excrement, and produce methane. This recycling of organic waste is extremely important because in space travel every available resource is essential.</li>
+      </ul>
+  </p>
+</div>
+
+
+<button class="accordion">Biotechnology: Pros and Cons</button>
+<div class="panel">
+  <p><b> The Pros of Biotechnology</b>
+    <ul> 
+        <li>  It can improve health and reduce hunger simultaneously. </li>
+        <li>  It creates flexibility within the food chain. </li> 
+        <li>  It offers medical advancement opportunities.  </li>
+        <li>  It allows us to preserve resources.  </li>
+        <li>  It helps us minimize or eliminate waste products. </li>
+        <li>  It can reduce infectious disease rates.</li>
+      </ul>
+  </p>
+  <p><b>The Cons of Biotechnology</b>
+    <ul> 
+        <li>  It creates an all-or-nothing approach. </li>
+        <li>  It is a field of research with many unknowns. </li> 
+        <li>  It could ruin croplands </li>
+        <li>  It turns human life into a commodity.  </li>
+        <li>  It can be used for destruction. </li>
+      </ul>
+  </p>
+</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</div>
+<br> <br>
+<br><div class="btnpre"> 
+  <a href= "nanotech_data.html"> 
+  <button style='font-size:18px'><i class='fa fa-angle-double-left'></i> Previous
+  </button>
+  </a> 
+</div> 
+<div class="btnnext"> 
+  <a href= "block_data.html"> 
+  <button style='font-size:18px'> Next  <i class='fa fa-angle-double-right'></i>
+  </button>
+  </a> 
+</div> 
+
+
+</body>
+</html>

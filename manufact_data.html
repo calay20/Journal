@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="style.css">
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+</style>
+</head>
+<body>
+  <br>
+  <div class="btnhome"> 
+    <a href= "index.html"> 
+    <button style='font-size:20px'><i class='fa fa-home'></i> Home
+    </button>
+    </a> 
+</div>
+<h2 style="text-align: center;">ADDITIVE MANUFACTURING (3D Printing)</h2>
+<br>
+<button class="accordion">What does it mean?</button>
+<div class="panel">
+<p><b>Additive manufacturing (AM)</b>, also known as 3D printing, is a process in which a three-dimensional object is built from a computer-aided design (CAD) model, usually by successively adding materials in a layer-by-layer fashion.</p>
+<div class="Datavideo">
+  <p> 
+    <iframe width="400" height="200" src="https://www.youtube.com/embed/Ev-MM9cGKiQ" title="An Introduction to Additive Manufacturing/3D Printing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </p>
+
+</div>
+</div>
+
+<button class="accordion">Additive manufacturing vs. subtractive manufacturing</button>
+<div class="panel">
+  <p> <b>Subtractive manufacturing </b>is the traditional way of making things. You start with a large block of something, and gradually cut away bits of it until you have the desired object.</p>
+  <p> <b> Additive manufacturing</b> means creating 3D objects by starting with nothing and adding one superfine layer at a time. 3D printing is one type of AM.
+   Over the past few decades, AM technology has advanced considerably. 3D printers today, for example, can create jet engine turbines, spare parts for vehicles, and even whole houses.</p>
+</div>
+
+<button class="accordion">Additive manufacturing – seven categories</button>
+<div class="panel">
+    <p> According to Loughborough University in the UK, there are seven categories of additive manufacturing:</p>
+    <ul> 
+    <p>
+    <li> <b>Vat Photopolymerization </b></li>
+    <li> <b>Material Jetting</b> </li> 
+    <li> <b>Binder Jetting</b></li>
+    <li> <b>Material Extrusion</b></li>
+    <li> <b>Power Bed Fusion</b></li>
+    <li> <b>Sheet Lamination</b></li>
+    <li> <b> Directed Energy Deposition</b></li>
+    </p>
+</ul>
+</div>
+
+
+
+<button class="accordion">Additive Manufacturing Processes</button>
+<div class="panel">
+  <div class="Datavideo">
+    <p> 
+      <iframe width="400" height="200" src="https://www.youtube.com/embed/_K1C_dkZK98" title="Additive Manufacturing Processes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </p>
+
+</div>
+</div>
+
+<button class="accordion">Benefits of Additive Manufacturing</button>
+<div class="panel">
+  <div class="Datavideo">
+    <p> 
+      <iframe width="400" height="200" src="https://www.youtube.com/embed/pWINaJQ_F1I" title="Benefits of additive manufacturing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </p>
+
+</div>
+</div>
+
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+<br> <br>
+<div class="btnpre"> 
+  <a href= "cyber_data.html"> 
+  <button style='font-size:18px'><i class='fa fa-angle-double-left'></i> Previous
+  </button>
+  </a> 
+</div> 
+<div class="btnnext"> 
+  <a href= "index.html"> 
+  <button style='font-size:18px'> Home  <i class='fa fa-angle-double-right'></i>
+  </button>
+  </a> 
+</div> 
+
+</body>
+</html>

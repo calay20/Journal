@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<title>My Web Journal</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" >
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+<body>
+  
+
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar" >
+  <button class="w3-bar-item w3-button w3-xlarge"
+  onclick="w3_close()">&times;</button>
+  <div class="w3-sidebar w3-bar-block">
+
+    <div class="panel panel-default">
+      <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Introduction</a>
+            </h4>
+          </div>
+          <div id="collapse1" class="panel-collapse collapse in">
+            <div class="panel-body"><a href="emerge.html">Emerging Technologies</a></div>
+            <div class="panel-body"><a href="treat.html">Challenges of Emerging Technologies</a></div>
+            <div class="panel-body"><a href="DataSci.html"> Data Science</a></div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Artificial Intelligence</a>
+            </h4>
+          </div>
+          <div id="collapse2" class="panel-collapse collapse">
+            <div class="panel-body"><a href="AI_def.html">Definition</a></div>
+            <div class="panel-body"><a href="AI_Types.html">Types of AI</a></div>
+            <div class="panel-body"><a href="AI_App.html">Application of AI</a></div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Internet of Things</a>
+            </h4>
+          </div>
+          <div id="collapse3" class="panel-collapse collapse">
+            <div class="panel-body"><a href="Iot_def.html">Definition of IoT</a></div>
+            <div class="panel-body"><a href="chall_IoT.html">Challenges, Disadvantages, & Advantages of IoT</a></div>
+            <div class="panel-body"><a href="Archi_IoT.html">Architecture of IoT</a></div>
+            <div class="panel-body"><a href="appli_IoT.html"> Application of IoT</a></div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Augmented Reality</a>
+            </h4>
+          </div>
+          <div id="collapse4" class="panel-collapse collapse">
+            <div class="panel-body"><a href="AR_def.html">Augmented Reality, Virtual Reality, and Mixed Reality</a></div>
+            <div class="panel-body"><a href="AR_appli.html"> Applications of Augmented Reality</a></div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Other Emerging Technologies</a>
+            </h4>
+          </div>
+          <div id="collapse5" class="panel-collapse collapse">
+            <div class="panel-body"> <a href="nanotech_data.html"> Nanotechnology</a></div> 
+            <div class="panel-body"> <a href="biotech_data.html"> Biotechnology</a></div>
+            <div class="panel-body"> <a href="block_data.html"> Blockchain Technology</a></div>
+            <div class="panel-body"> <a href="cloud.html"> Cloud and Quantum Computing</a></div>
+            <div class="panel-body"> <a href="autonomic.html">Autonomic Computing </a></div> 
+            <div class="panel-body"> <a href="VISION.html">Computer Vision</a></div> 
+            <div class="panel-body"> <a href="embedded_data.html">Embedded System</a></div>
+            <div class="panel-body"> <a href="cyber_data.html">Cybersecurity</a></div>
+            <div class="panel-body"> <a href="manufact_data.html">Additive Manufacturing (3D Printing)</a></div>
+          </div>
+        </div>
+        <div class="panel-body"><a href="about.html">About</a></div>
+
+      </div> 
+    </div>
+
+
+          
+
+  </div>
+</div>
+
+<div id="main">
+
+<div class="w3-cyan">
+  <button id="openNav" class="w3-button w3-cyan w3-xlarge" onclick="w3_open()">&#9776;</button>
+  <div class="w3-container">
+    <h1 style="text-align: center;">EMERGING TECHNOLOGIES</h1>
+  </div>
+</div>
+
+<img src="01Techfix-print-jumbo.gif" alt="bg" style="width:100%">
+</div>
+<script>
+function w3_open() {
+  document.getElementById("main").style.marginLeft = "25%";
+  document.getElementById("mySidebar").style.width = "25%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
+
+</body>
+</html>

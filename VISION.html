@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="style.css">
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+</style>
+</head>
+<body>
+  <div class="btnhome"> 
+    <a href= "index.html"> 
+    <button style='font-size:20px'><i class='fa fa-home'></i> Home
+    </button>
+    </a> 
+</div>
+<br>
+<h2 style="text-align: center;">COMPUTER VISION</h2>
+<br>
+<button class="accordion">What does Computer Vision mean? </button>
+<div class="panel">
+  <p>
+   <b> Computer vision </b> is one of the fields of artificial intelligence that trains and enables computers to understand the visual world. Computers can use digital images and deep learning models to accurately identify and classify objects and react to them.
+
+    Computer vision in AI is dedicated to the development of automated systems that can interpret visual data (such as photographs or motion pictures) in the same manner as people do. The idea behind computer vision is to instruct computers to interpret and comprehend images on a pixel-by-pixel basis. This is the foundation of the computer vision field. Regarding the technical side of things, computers will seek to extract visual data, manage it, and analyze the outcomes using sophisticated software programs.
+  </p>
+</div>
+
+<button class="accordion">History of Computer Vision</button>
+<div class="panel">
+  <br> 
+  <p>
+    The origins of computer vision go back to an MIT undergraduate summer project in 1966. It was
+    believed at the time that computer vision could be solved in one summer, but we now have a 50-
+    year old scientific field that is still far from being solved.
+    Early experiments in computer vision took place in the 1950s, using some of the first neural
+    networks to detect the edges of an object and to sort simple objects into categories like circles and
+    squares. In the 1970s, the first commercial use of computer vision interpreted typed or handwritten
+    text using optical character recognition. This advancement was used to interpret written text for
+    the blind. As the internet matured in the 1990s, making large sets of images available online for
+    analysis, facial recognition programs flourished. These growing data sets helped make it possible
+    for machines to identify specific people in photos and videos.
+  </p>
+</div>
+
+<button class="accordion">Example of Computer Vision </button>
+
+<div class="panel">
+  <br> <br>
+  <div class="container">
+    <div class="row">
+        <div class="col">
+          <div class="card" style="border: 3px solid red;">
+            <img class="card-img-top" src="facial-recognition.jpg" alt="Card image" style="height:210px">
+            <div class="card-body">
+              <h6 class="card-title"> Public Security-Facial Recognition</h6>
+            </div>
+          </div>
+    </div>
+  
+    <div class="col">
+        <div class="card" style="border: 3px solid red;">
+            <img class="card-img-top" src="medical-imaging.jpg" alt="Card image" style="height:210px">
+            <div class="card-body">
+              <h6 class="card-title"> Medicine – Medical Imaging </h6>
+            </div>
+          </div>
+    </div>
+    <div class="col">
+        <div class="card" style="border: 3px solid red;">
+            <img class="card-img-top" src="ret.jpg" alt="Card image" style="height:210px">
+            <div class="card-body">
+              <h6 class="card-title"> Defect Detection </h6>
+            </div>
+          </div>
+    </div>
+  
+  </div>
+  
+</div>
+<br> <br>
+</div>
+
+<button class="accordion"> Computer Vision Applications</button>
+<div class="panel">
+  <div class="vid">
+    
+    <iframe width="500" height="280" src="https://www.youtube.com/embed/GvRCXGBXiwI" title="5 Real World Applications of Computer Vision | Learn Artificial Intelligence" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <br>
+   <ul> 
+      <li> Facial recognition</li>
+      <li> Self-driving cars</li>
+      <li> Robotic automation</li>
+      <li> Medical anomaly detection </li>
+      <li> Sports performance analysis</li>       
+      <li> Manufacturing fault detection</li>
+      <li> Agricultural monitoring</li>
+      <li> Plant species classification</li>
+      <li>  Text parsing</li>
+   </ul>
+</div>
+
+</div>
+
+<button class="accordion">Why is Computer Vision Important?</button>
+<div class="panel">
+    <p>
+      The importance of computer vision comes from the increasing need for computers to be able to understand the human environment. To understand the environment, it helps if computers can see what we do, which means mimicking the sense of human vision. This is especially important as we develop more complex AI systems that are more human-like in their abilities.
+    </p>
+</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</div>
+<br>
+<div class="btnpre"> 
+  <a href= "autonomic.html"> 
+  <button style='font-size:18px'><i class='fa fa-angle-double-left'></i> Previous
+  </button>
+  </a> 
+</div> 
+<div class="btnnext"> 
+  <a href= "embedded_data.html"> 
+  <button style='font-size:18px'> Next  <i class='fa fa-angle-double-right'></i>
+  </button>
+  </a> 
+</div> 
+
+
+</body>
+</html>
